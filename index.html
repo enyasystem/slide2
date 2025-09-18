@@ -93,24 +93,32 @@
                 <div class="arch-card">
                     <h3>Internal Infrastructure</h3>
                     <ul>
-                        <li>Central servers with public IPs</li>
-                        <li>Employee workstations</li>
-                        <li>BYOD devices</li>
-                        <li>Portable storage media</li>
+                        <li><strong>Central servers:</strong> Computers that store company data and applications, e.g., a file server in an office.</li>
+                        <li><strong>Employee workstations:</strong> Laptops and desktops used by staff for daily work.</li>
+                        <li><strong>BYOD devices:</strong> "Bring Your Own Device"—personal phones or tablets connected to the company network.</li>
+                        <li><strong>Portable storage media:</strong> USB drives or external hard drives used to transfer files.</li>
                     </ul>
+                    <div style="margin-top:10px;text-align:center;">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Office network" style="max-width:100%;border-radius:8px;">
+                        <div style="font-size:0.9em;color:#ffd700;">Example: Office network (Unsplash)</div>
+                    </div>
                 </div>
                 <div class="arch-card">
                     <h3>Extended Environment</h3>
                     <ul>
-                        <li>Remote offices</li>
-                        <li>Cloud applications</li>
-                        <li>Teleworking employees</li>
-                        <li>Third-party providers</li>
+                        <li><strong>Remote offices:</strong> Branches in different locations connected via the internet.</li>
+                        <li><strong>Cloud applications:</strong> Services like Google Drive or Microsoft 365 used for storing and sharing files online.</li>
+                        <li><strong>Teleworking employees:</strong> Staff working from home, connecting to the office network remotely.</li>
+                        <li><strong>Third-party providers:</strong> External companies that help with IT support or cloud hosting.</li>
                     </ul>
+                    <div style="margin-top:10px;text-align:center;">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Remote work" style="max-width:100%;border-radius:8px;">
+                        <div style="font-size:0.9em;color:#ffd700;">Example: Remote work (Unsplash)</div>
+                    </div>
                 </div>
             </div>
             <div class="risk-box">
-                <strong>Challenge:</strong> Traditional network perimeters are no longer clearly defined
+                <strong>Challenge:</strong> In the past, everything was inside one building. Now, with remote work and cloud services, the "edges" of the network are everywhere, making it harder to protect.
             </div>
         </div>
 
@@ -121,19 +129,18 @@
                 <div class="arch-card">
                     <h3>Defense-in-Depth</h3>
                     <ul>
-                        <li>Multiple security layers</li>
-                        <li>Each layer counters specific threats</li>
-                        <li>Layered protection approach</li>
-                        <li>Redundant security controls</li>
+                        <li><strong>Multiple security layers:</strong> Like having a fence, a locked door, and an alarm system at home. If one fails, others still protect you.</li>
+                        <li><strong>Each layer counters specific threats:</strong> For example, antivirus stops malware, while firewalls block unwanted network traffic.</li>
+                        <li><strong>Redundant security controls:</strong> If one control is bypassed, another is still in place.</li>
                     </ul>
                 </div>
                 <div class="arch-card">
                     <h3>Zero Trust</h3>
                     <ul>
-                        <li>"Never trust, always verify"</li>
-                        <li>"Assume breach" mentality</li>
-                        <li>Continuous verification</li>
-                        <li>Least privilege access</li>
+                        <li><strong>"Never trust, always verify":</strong> Every user and device must prove who they are, every time.</li>
+                        <li><strong>"Assume breach" mentality:</strong> Act as if attackers are already inside, so always check and monitor.</li>
+                        <li><strong>Continuous verification:</strong> Keep checking users and devices, not just at login.</li>
+                        <li><strong>Least privilege access:</strong> Give people only the access they need, nothing more.</li>
                     </ul>
                 </div>
             </div>
@@ -142,16 +149,21 @@
         <!-- Slide 7: Defense-in-Depth Details -->
         <div class="slide content-slide">
             <h2>🔒 Defense-in-Depth Architecture</h2>
-            <h3>Key Components:</h3>
+            <h3>Key Components (with cybersecurity & everyday examples):</h3>
             <ul>
-                <li><strong>Policies & Procedures:</strong> Risk analysis, user training, supply chain management</li>
-                <li><strong>Access Restrictions:</strong> Least privilege, need-to-know principles</li>
-                <li><strong>Network Security:</strong> Segmentation, firewalls, IDS, VPNs</li>
-                <li><strong>Device Protection:</strong> Antivirus, application whitelisting</li>
-                <li><strong>Application & Data Protection:</strong> Patching, backup, encryption</li>
+                <li><strong>Policies & Procedures:</strong> Like house rules—"lock the door when you leave" (home) or "use strong passwords" (work).</li>
+                <li><strong>Access Restrictions:</strong> Only parents can open the safe at home; only IT staff can install software at work.</li>
+                <li><strong>Network Security:</strong> A fence around your house (home) or a firewall blocking bad websites (work).</li>
+                <li><strong>Device Protection:</strong> Antivirus is like a security dog that barks at intruders; only approved apps can run, like only letting friends in your house.</li>
+                <li><strong>Application & Data Protection:</strong> Backing up photos to the cloud (home) or encrypting company files (work).</li>
+            </ul>
+            <div style="margin-top:10px;text-align:center;">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Security layers" style="max-width:100%;border-radius:8px;">
+                <div style="font-size:0.9em;color:#ffd700;">Example: Security layers (Unsplash)</div>
+            </div>
             </ul>
             <div class="highlight">
-                <p><strong>Effectiveness:</strong> Reduces chance of successful attacks and minimizes damage</p>
+                <p><strong>Effectiveness:</strong> Like having several locks on your door—if one fails, others still protect you.</p>
             </div>
         </div>
 
@@ -160,32 +172,25 @@
             <h2>🚫 Zero Trust Model</h2>
             <div class="two-column">
                 <div>
-                    <h3>Core Principles:</h3>
+                    <h3>Core Principles (explained):</h3>
                     <ul>
-                        <li><strong>Never Trust, Always Verify</strong>
-                            <ul>
-                                <li>Every user/device is untrustworthy</li>
-                                <li>Explicit authentication required</li>
-                                <li>Minimum required privileges</li>
-                            </ul>
-                        </li>
-                        <li><strong>Assume Breach</strong>
-                            <ul>
-                                <li>Devices may be compromised</li>
-                                <li>Deny-by-default principle</li>
-                                <li>Multi-parameter verification</li>
-                            </ul>
-                        </li>
+                        <li><strong>Never Trust, Always Verify:</strong> Like checking a delivery person's ID before letting them in, even if they're wearing a uniform. In cybersecurity, always require passwords and extra checks (multi-factor authentication).</li>
+                        <li><strong>Assume Breach:</strong> At home, you might keep valuables hidden even if you trust your guests. In cybersecurity, always monitor for suspicious activity, just in case.</li>
+                        <li><strong>Deny-by-default:</strong> Like keeping your room locked unless someone asks for permission. In IT, block access unless a user is approved.</li>
                     </ul>
                 </div>
                 <div>
-                    <h3>Implementation Features:</h3>
+                    <h3>Implementation Features (examples):</h3>
                     <ul>
-                        <li>Detailed monitoring procedures</li>
-                        <li>Comprehensive logging</li>
-                        <li>Automated suspicious activity detection</li>
-                        <li>Immediate incident response</li>
+                        <li><strong>Monitoring:</strong> Like a security camera at home, software watches for strange logins or file access.</li>
+                        <li><strong>Logging:</strong> Keeping a diary of who entered your house; in IT, logs show who did what and when.</li>
+                        <li><strong>Automated detection:</strong> Like a burglar alarm, alerts if someone tries to break in or steal data.</li>
+                        <li><strong>Incident response:</strong> Having a plan to call the police or lock doors quickly; in IT, quickly lock accounts or disconnect devices if something suspicious happens.</li>
                     </ul>
+                    <div style="margin-top:10px;text-align:center;">
+                        <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=400&q=80" alt="Zero Trust" style="max-width:100%;border-radius:8px;">
+                        <div style="font-size:0.9em;color:#ffd700;">Example: Zero Trust (Unsplash)</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -193,15 +198,19 @@
         <!-- Slide 9: Risk Assessment Framework -->
         <div class="slide content-slide">
             <h2>⚠️ Risk Assessment Framework</h2>
-            <h3>Key Steps in Risk Assessment:</h3>
+            <h3>Key Steps in Risk Assessment (with examples):</h3>
             <ol>
-                <li><strong>Identify Threat Sources:</strong> Malicious groups, competitors, states, physical threats, errors</li>
-                <li><strong>Identify Threat Events:</strong> Cyber attacks, natural disasters, material damage</li>
-                <li><strong>Identify Vulnerabilities:</strong> System weaknesses that can be exploited</li>
-                <li><strong>Estimate Probability:</strong> Likelihood of threats and successful completion</li>
-                <li><strong>Assess Adverse Effects:</strong> Impact on functions, individuals, organizations, national security</li>
-                <li><strong>Determine Risk Level:</strong> Probability × Impact calculation</li>
+                <li><strong>Identify Threat Sources:</strong> Who or what could cause harm? (e.g., hackers, storms, careless employees)</li>
+                <li><strong>Identify Threat Events:</strong> What could go wrong? (e.g., a hacker tries to steal data, a flood damages computers)</li>
+                <li><strong>Identify Vulnerabilities:</strong> What weaknesses exist? (e.g., weak passwords, unlocked doors)</li>
+                <li><strong>Estimate Probability:</strong> How likely is it? (e.g., "We get storms every year" or "We never change our passwords")</li>
+                <li><strong>Assess Adverse Effects:</strong> What could happen? (e.g., loss of money, data, or reputation)</li>
+                <li><strong>Determine Risk Level:</strong> Combine likelihood and impact (e.g., "If a hacker gets in, we could lose all our customer data")</li>
             </ol>
+            <div style="margin-top:10px;text-align:center;">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Risk assessment" style="max-width:100%;border-radius:8px;">
+                <div style="font-size:0.9em;color:#ffd700;">Example: Risk assessment (Unsplash)</div>
+            </div>
         </div>
 
         <!-- Slide 10: Information Security Management -->
@@ -257,12 +266,16 @@
             <div class="risk-box">
                 <h3>Risks Without Asset Inventory:</h3>
                 <ul>
-                    <li>Cannot track legally established resources</li>
-                    <li>Attackers scan for unprotected systems</li>
-                    <li>Unregistered machines with insecure configurations</li>
-                    <li>Unidentified mobile device connections</li>
-                    <li>Difficult incident response and forensics</li>
+                    <li>Like not knowing how many doors or windows your house has—hard to secure what you don't know about.</li>
+                    <li>Attackers look for forgotten computers or devices to break into.</li>
+                    <li>Unregistered machines may have weak security settings.</li>
+                    <li>Unknown devices (like a visitor's phone) can connect and cause problems.</li>
+                    <li>If something goes wrong, it's hard to investigate if you don't know what should be there.</li>
                 </ul>
+                <div style="margin-top:10px;text-align:center;">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Asset inventory" style="max-width:100%;border-radius:8px;">
+                    <div style="font-size:0.9em;color:#ffd700;">Example: Asset inventory (Unsplash)</div>
+                </div>
             </div>
         </div>
 
@@ -293,13 +306,17 @@
         <div class="slide content-slide">
             <h2>⚙️ 2. Secure Configuration</h2>
             <div class="risk-box">
-                <h3>Configuration Risks:</h3>
+                <h3>Configuration Risks (with examples):</h3>
                 <ul>
-                    <li><strong>Default Settings:</strong> Admin/admin credentials, unnecessary privileges</li>
-                    <li><strong>Vulnerable Protocols:</strong> Older, insecure protocol versions</li>
-                    <li><strong>Poor Patch Management:</strong> Known vulnerabilities remain unpatched</li>
-                    <li><strong>Unauthorized Changes:</strong> Security configurations modified without authorization</li>
+                    <li><strong>Default Settings:</strong> Like leaving your luggage unlocked at the airport. In IT, using "admin/admin" as a password is very risky.</li>
+                    <li><strong>Vulnerable Protocols:</strong> Like using an old, rusty lock. Outdated software or network protocols are easier to break into.</li>
+                    <li><strong>Poor Patch Management:</strong> Not fixing a broken window at home. In IT, not updating software leaves known holes open for attackers.</li>
+                    <li><strong>Unauthorized Changes:</strong> Someone changes your house locks without telling you. In IT, unauthorized changes can weaken security.</li>
                 </ul>
+                <div style="margin-top:10px;text-align:center;">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Configuration risk" style="max-width:100%;border-radius:8px;">
+                    <div style="font-size:0.9em;color:#ffd700;">Example: Configuration risk (Unsplash)</div>
+                </div>
             </div>
         </div>
 

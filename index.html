@@ -10,13 +10,11 @@
     <div class="presentation-container">
         <div class="time-indicator" id="timeIndicator">⏱️ Session Time: 0:00</div>
         <div class="slide-counter" id="slideCounter">1 / 20</div>
-        
         <div class="controls">
             <button class="control-btn" onclick="startTimer()">Start Session</button>
             <button class="control-btn" onclick="pauseTimer()">Pause</button>
             <button class="control-btn" onclick="resetTimer()">Reset</button>
         </div>
-
         <div class="navigation">
             <button class="nav-btn" onclick="previousSlide()">← Previous</button>
             <button class="nav-btn" onclick="nextSlide()">Next →</button>
@@ -32,49 +30,74 @@
                 <p><strong>Instructor:</strong> [Your Name]</p>
                 <p><strong>Date:</strong> [Date]</p>
             </div>
+            <div style="margin-top:18px;text-align:center;">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Cybersecurity" style="max-width:320px;border-radius:10px;box-shadow:0 2px 12px #e0e7ef;">
+            </div>
         </div>
 
         <!-- Slide 2: Course Overview -->
         <div class="slide content-slide">
-            <h2>📋 Course Overview & Timeline</h2>
-            <div class="two-column">
-                <div>
-                    <h3>Part A: Introduction (90 minutes)</h3>
-                    <ul>
-                        <li>Security Architectures (30 min)</li>
-                        <li>Risk Assessment (30 min)</li>
-                        <li>Management Systems (30 min)</li>
-                    </ul>
-                    <div style="margin: 20px 0; padding: 15px; background: rgba(255,215,0,0.2); border-radius: 10px;">
-                        <strong>Break: 15 minutes (3:30-3:45 PM)</strong>
-                    </div>
-                </div>
-                <div>
-                    <h3>Part B: Best Practices (75 minutes)</h3>
-                    <ul>
-                        <li>Asset Inventory (20 min)</li>
-                        <li>Secure Configuration (25 min)</li>
-                        <li>Application Control (15 min)</li>
-                        <li>Access Control (15 min)</li>
-                    </ul>
-                </div>
+            <h2>📋 Course Overview</h2>
+            <p>This course introduces the basics of cybersecurity, focusing on network and information systems security. You will learn how to identify threats, assess risks, and apply best practices to protect digital assets in both personal and professional settings.</p>
+            <div class="highlight">No prior experience is required—this course is designed for beginners and those looking to strengthen their foundational knowledge.</div>
+            <div style="margin-top:18px;text-align:center;">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Course Overview" style="max-width:320px;border-radius:10px;box-shadow:0 2px 12px #e0e7ef;">
             </div>
         </div>
 
-        <!-- Slide 3: Learning Objectives -->
+        <!-- Slide 3: Learning Objective 1 -->
         <div class="slide content-slide">
-            <h2>🎯 Learning Objectives</h2>
-            <div class="highlight">
-                <p>By the end of this session, you will:</p>
+            <h2>🎯 Learning Objective</h2>
+            <p>Understand modern network security challenges.</p>
+            <div class="highlight">Today's networks are more complex than ever, with remote work, cloud services, and personal devices all connecting to business systems. This increases the number of entry points for attackers.</div>
+            <div style="margin-top:18px;text-align:center;">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Network Security" style="max-width:320px;border-radius:10px;box-shadow:0 2px 12px #e0e7ef;">
             </div>
-            <ul>
-                <li>Understand modern network security challenges</li>
-                <li>Compare Defense-in-Depth vs Zero Trust architectures</li>
-                <li>Learn systematic risk assessment methodologies</li>
-                <li>Master essential cybersecurity best practices</li>
-                <li>Implement practical security controls</li>
-                <li>Establish information security management systems</li>
-            </ul>
+        </div>
+        <!-- Slide 4: Learning Objective 2 -->
+        <div class="slide content-slide">
+            <h2>🎯 Learning Objective</h2>
+            <p>Compare Defense-in-Depth vs Zero Trust architectures.</p>
+            <div class="highlight">Defense-in-Depth uses multiple layers of security (like a castle with walls, guards, and a moat), while Zero Trust assumes no one is trusted by default—even inside the network. Both approaches help reduce risk.</div>
+            <div style="margin-top:18px;text-align:center;">
+                <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=600&q=80" alt="Defense in Depth" style="max-width:320px;border-radius:10px;box-shadow:0 2px 12px #e0e7ef;">
+            </div>
+        </div>
+        <!-- Slide 5: Learning Objective 3 -->
+        <div class="slide content-slide">
+            <h2>🎯 Learning Objective</h2>
+            <p>Learn systematic risk assessment methodologies.</p>
+            <div class="highlight">Risk assessment means identifying what could go wrong, how likely it is, and what the impact would be. For example, a weak password could let a hacker in—how likely is that, and what could they access?</div>
+            <div style="margin-top:18px;text-align:center;">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Risk Assessment" style="max-width:320px;border-radius:10px;box-shadow:0 2px 12px #e0e7ef;">
+            </div>
+        </div>
+        <!-- Slide 6: Learning Objective 4 -->
+        <div class="slide content-slide">
+            <h2>🎯 Learning Objective</h2>
+            <p>Master essential cybersecurity best practices.</p>
+            <div class="highlight">Best practices include using strong passwords, keeping software updated, and being careful with email links. These simple steps can prevent most common attacks.</div>
+            <div style="margin-top:18px;text-align:center;">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Best Practices" style="max-width:320px;border-radius:10px;box-shadow:0 2px 12px #e0e7ef;">
+            </div>
+        </div>
+        <!-- Slide 7: Learning Objective 5 -->
+        <div class="slide content-slide">
+            <h2>🎯 Learning Objective</h2>
+            <p>Implement practical security controls.</p>
+            <div class="highlight">Security controls are tools and rules that protect your data—like firewalls, antivirus, and access restrictions. For example, only allowing certain people to access sensitive files.</div>
+            <div style="margin-top:18px;text-align:center;">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Security Controls" style="max-width:320px;border-radius:10px;box-shadow:0 2px 12px #e0e7ef;">
+            </div>
+        </div>
+        <!-- Slide 8: Learning Objective 6 -->
+        <div class="slide content-slide">
+            <h2>🎯 Learning Objective</h2>
+            <p>Establish information security management systems.</p>
+            <div class="highlight">A management system is a set of policies and procedures that keep security organized and up to date. For example, a company might have regular security training and audits to ensure everyone follows the rules.</div>
+            <div style="margin-top:18px;text-align:center;">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Management Systems" style="max-width:320px;border-radius:10px;box-shadow:0 2px 12px #e0e7ef;">
+            </div>
         </div>
 
         <!-- Slide 4: Part A Introduction -->

@@ -1,11 +1,26 @@
+
 // JavaScript extracted from index.html
 let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+let slides;
+let totalSlides;
 let timerInterval;
 let startTime;
 let elapsedTime = 0;
 let isTimerRunning = false;
+
+function initializeSlides() {
+    slides = document.querySelectorAll('.slide');
+    totalSlides = slides.length;
+    showSlide(currentSlide);
+    updateSlideCounter();
+}
+
+// Wait for DOM to be ready before initializing
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeSlides);
+} else {
+    initializeSlides();
+}
 
 function showSlide(index) {
     slides.forEach((slide, i) => {

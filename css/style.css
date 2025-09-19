@@ -9,26 +9,32 @@
     opacity: 0;
     transform: translateY(40px) scale(0.98);
     animation: slideInImageText 1s cubic-bezier(.4,0,.2,1) forwards;
+    background: #fff;
+    transition: background 0.8s cubic-bezier(.4,0,.2,1);
 }
 .image-text-slide.animated {
     opacity: 1;
     transform: translateY(0) scale(1);
+    background: #eaf3fb;
+    transition: background 0.8s cubic-bezier(.4,0,.2,1);
 }
+
 
 .image-text-slide .slide-text {
     opacity: 0;
-    transform: translateX(-40px);
-    animation: fadeInText 1.1s 0.3s cubic-bezier(.4,0,.2,1) forwards;
+    transform: translateY(40px);
+    animation: slideUpFadeText 1.1s 0.3s cubic-bezier(.4,0,.2,1) forwards;
 }
 .image-text-slide.animated .slide-text {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
 }
+
 
 .image-text-slide .slide-image {
     opacity: 0;
-    transform: scale(0.92);
-    animation: zoomInImage 1.1s 0.5s cubic-bezier(.4,0,.2,1) forwards;
+    transform: scale(0.7);
+    animation: bounceInImage 1.1s 0.5s cubic-bezier(.4,0,.2,1) forwards;
 }
 .image-text-slide.animated .slide-image {
     opacity: 1;
@@ -46,23 +52,34 @@
     }
 }
 
-@keyframes fadeInText {
+@keyframes slideUpFadeText {
     from {
         opacity: 0;
-        transform: translateX(-40px);
+        transform: translateY(40px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-8px);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
-@keyframes zoomInImage {
-    from {
+@keyframes bounceInImage {
+    0% {
         opacity: 0;
-        transform: scale(0.92);
+        transform: scale(0.7);
     }
-    to {
+    60% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+    80% {
+        transform: scale(0.96);
+    }
+    100% {
         opacity: 1;
         transform: scale(1);
     }

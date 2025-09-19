@@ -139,12 +139,13 @@
     justify-content: center;
     position: relative;
     min-width: 240px;
-    max-width: 400px;
+    max-width: 600px;
     min-height: 220px;
 }
 .image-text-slide .slide-image img {
-    max-width: 320px;
+    max-width: 480px;
     width: 100%;
+    min-width: 320px;
     border-radius: 16px;
     box-shadow: 0 2px 16px #e0e7ef;
     z-index: 2;
@@ -174,7 +175,7 @@
         justify-content: center;
     }
     .image-text-slide .slide-image img {
-        max-width: 90vw;
+        max-width: 98vw;
         min-width: 0;
     }
 }

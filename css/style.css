@@ -246,6 +246,19 @@ body {
     background: #2a5298;
     box-shadow: 0 4px 16px 0 rgba(44,62,80,0.13);
 }
+.navigation {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+    z-index: 2000;
+    display: flex;
+    gap: 8px;
+    border-radius: 22px;
+    box-shadow: 0 2px 12px 0 rgba(44,62,80,0.10);
+    padding: 6px 12px;
+}
 @media (max-width: 1200px) {
     .presentation-container {
         max-width: 99vw;
@@ -265,9 +278,18 @@ body {
         padding: 12px 0.5vw 12px 0.5vw;
         min-height: 70vh;
     }
-    .time-indicator, .slide-counter, .controls, .navigation {
+    .time-indicator, .slide-counter, .controls {
         position: static;
         margin: 8px 0;
         box-shadow: none;
+    }
+    .navigation {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+        margin: 0;
+        width: auto;
+        box-shadow: 0 2px 12px 0 rgba(44,62,80,0.10);
     }
 }

@@ -1,3 +1,62 @@
+/* --- Slide image-text layout --- */
+.image-text-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    min-height: 60vh;
+}
+.image-text-slide .slide-text {
+    flex: 1 1 0;
+    min-width: 0;
+}
+.image-text-slide .slide-image {
+    flex: 1 1 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 240px;
+    max-width: 400px;
+    min-height: 220px;
+}
+.image-text-slide .slide-image img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px #e0e7ef;
+    z-index: 2;
+    position: relative;
+}
+.decorative-bg {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 90%;
+    height: 80%;
+    background: linear-gradient(120deg, #eaf3fb 60%, #c9e7ff 100%);
+    border-radius: 22px 60px 32px 18px;
+    z-index: 1;
+    filter: blur(2px) opacity(0.7);
+}
+@media (max-width: 900px) {
+    .image-text-slide {
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px 0 18px 0;
+    }
+    .image-text-slide .slide-image {
+        max-width: 100vw;
+        min-width: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .image-text-slide .slide-image img {
+        max-width: 90vw;
+        min-width: 0;
+    }
+}
 /* Main stylesheet extracted from index.html */
 
 /* --- Modern Professional Cybersecurity Slide Theme --- */
